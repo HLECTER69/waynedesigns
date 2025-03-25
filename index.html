@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeman - Creative Video Editor & Web Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#15B8A6',
+            secondary: '#0F172A'
+          },
+          borderRadius: {
+            'none': '0px',
+            'sm': '8px',
+            DEFAULT: '12px',
+            'md': '16px',
+            'lg': '20px',
+            'xl': '24px',
+            '2xl': '28px',
+            '3xl': '22px',
+            'full': '9999px',
+            'button': '12px'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+  <style>
+    :where([class^="ri-"])::before { content: "\f3c2"; }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  @keyframes navslideanim {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0px);
+    }
+  }
+
+    .mobile-menu {
+      animation-name: navslideanim;
+      animation-timing-function: 100;
+    }
+
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen font-['Poppins']">
+  <header class="fixed w-full top-0 z-50 bg-gray-900/80 backdrop-blur-sm">
+    <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold font['Poppins'] text-primary">Wayne Designs</a>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#work" class="hover:text-primary transition-colors">Work</a>
+        <a href="#services" class="hover:text-primary transition-colors">Services</a>
+        <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+      </div>
+      <!-- Hamburger Button for Mobile -->
+      <button class="mobile-menu-button md:hidden w-10 h-10 flex items-center justify-center">
+        <i class="ri-menu-line text-2xl"></i>
+      </button>
+    </nav>
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-900 bg-opacity-50 backdrop-blur-1g px-9 pb-6 ">
+      <a href="#work" class="block py-2 border-b border-gray-700 hover:text-primary transition-colors">Work</a>
+      <a href="#services" class="block py-2 border-b border-gray-700 hover:text-primary transition-colors">Services</a>
+      <a href="#skills" class="block py-2 border-b border-gray-700 hover:text-primary transition-colors">Skills</a>
+      <a href="#contact" class="block py-2 hover:text-primary transition-colors">Contact</a>
+    </div>
+  </header>
+  
+  <main class="pt-20">
+    <section class="relative h-screen flex items-center" style="background-image: url('https://readdy.ai/api/search-image?query=modern minimalist office workspace with video editing setup, professional camera equipment, clean aesthetic, soft lighting, teal and dark color scheme, cinematic atmosphere&width=1920&height=1080&seq=1&orientation=landscape&flag=18d703c1c66ce7b5e35f0b3d6fed9830'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-gray-900/70"></div>
+      <div class="container mx-auto px-6 relative">
+        <div class="max-w-3xl">
+          <h1 class="text-5xl font-bold mb-6 font-['Poppins']">Hi, I'm <span style="color: #15B8A6">Seeman</span></h1>
+          <p class="text-1xl mb-8">Crafting Digital Stories Through Raw Video footages & Websites</p>
+          <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+            View My Work
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center font-['Poppins']">Featured Project</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="video-container rounded-lg overflow-hidden">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4">New To Field , Ready To Hustle</h3>
+            <div class="space-y-4">
+              <div>
+                <span class="text-primary">Name :</span> Seeman P
+              </div>
+              <div>
+                <span class="text-primary">Qualification :</span> BE(EEE) Doing IIIyr Right Now
+              </div>
+              <div>
+                <span class="text-primary">Skills :</span> Small Scale professionalized Video Editor & Web Developer
+              </div>
+              <p class="mt-6">Created a nice video campaign showcasing the park's natural beauty and recreational facilities. A Backstreet Rookie in the Web Developing Industry But Have Some Knowledge of an Frontline Prodiger and This Website was also made by himself  ...</p>
+              <button class="mt-8 bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+                View Full Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center font-['Poppins']">Services</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 p-8 rounded-lg">
+            <div class="w-16 h-16 flex items-center justify-center mb-6">
+              <i class="ri-video-line text-4xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Commercial Video Production</h3>
+            <p class="mb-6">Professional video editing and production services for commercials, corporate videos, and social media content.</p>
+            <p class="text-primary mb-4"></p>
+            <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+              Enquire Now
+            </button>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg">
+            <div class="w-16 h-16 flex items-center justify-center mb-6">
+              <i class="ri-code-line text-4xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Web Development</h3>
+            <p class="mb-6">Custom website development, responsive design, and Portfolio creation</p>
+            <p class="text-primary mb-4"></p>
+            <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+              Enquire Now
+            </button>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg">
+            <div class="w-16 h-16 flex items-center justify-center mb-6">
+              <i class="ri-paint-brush-line text-4xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Content Creation</h3>
+            <p class="mb-6">Strategic content creation including storyboarding, scriptwriting, and visual design.</p>
+            <p class="text-primary mb-4"></p>
+            <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center font-['Poppins']">Technical Expertise</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-xl font-bold mb-6">Video Editing</h3>
+            <div id="videoSkillsChart" class="h-80"></div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6">Web Development</h3>
+            <div id="webSkillsChart" class="h-80"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center font-['Poppins']">Get in Touch</h2>
+        <div class="max-w-2xl mx-auto">
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block mb-2">Name</label>
+                <input type="text" class="w-full px-4 py-2 bg-gray-800 rounded border-none" required>
+              </div>
+              <div>
+                <label class="block mb-2">Email</label>
+                <input type="email" class="w-full px-4 py-2 bg-gray-800 rounded border-none" required>
+              </div>
+            </div>
+            <div>
+              <label class="block mb-2">Project Type</label>
+              <select class="w-full px-4 py-2 bg-gray-800 rounded border-none pr-8" required>
+                <option>Video Production</option>
+                <option>Web Development</option>
+                <option>Content Creation</option>
+              </select>
+            </div>
+            <div>
+              <label class="block mb-2">Budget Range</label>
+              <select class="w-full px-4 py-2 bg-gray-800 rounded border-none pr-8" required>
+                <option>Small Scale</option>
+                <option>Medium Scale</option>
+                <option>Large Scale</option>
+              </select>
+            </div>
+            <div>
+              <label class="block mb-2">Project Details</label>
+              <textarea class="w-full px-4 py-2 bg-gray-800 rounded border-none h-32" required></textarea>
+            </div>
+            <button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-gray-800 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl text-primary font-bold mb-4">Wayne Designs</h3>
+          <p>Creative Video Editor & Web Developer based in Madurai ( Tamil Nadu )</p>
+        </div>
+        <div>
+          <h3 class="text-xl text-primary font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#work" class="hover:text-primary">Work</a></li>
+            <li><a href="#services" class="hover:text-primary">Services</a></li>
+            <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+            <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl text-primary font-bold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li>Email : seeman2005pk@gmail.com</li>
+            <li>Contact : +91 8667256414</li>
+            <li>Madurai , Tamil Nadu</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl text-primary font-bold mb-4">Follow Me</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.instagram.com/wayne_asf?igsh=ZHkxcmozYzk3OGFr" class="w-10 h-10 flex items-center justify-center hover:text-primary">
+              <i class="ri-instagram-line text-xl"></i>
+            </a>
+            <a href="https://t.me/HLECTER69" class="w-10 h-10 flex items-center justify-center hover:text-primary">
+              <i class="ri-telegram-line text-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/seeman-p-b342b22a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="w-10 h-10 flex items-center justify-center hover:text-primary">
+              <i class="ri-linkedin-line text-xl"></i>
+            </a>
+            <a href="https://www.youtube.com/@looserz_fx" class="w-10 h-10 flex items-center justify-center hover:text-primary">
+              <i class="ri-youtube-line text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+        <p>&copy; 2025 Wayne Designs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Toggle mobile menu
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // ECharts initialization for skills
+    const videoSkillsChart = echarts.init(document.getElementById('videoSkillsChart'));
+    const webSkillsChart = echarts.init(document.getElementById('webSkillsChart'));
+    
+    const videoSkillsOption = {
+      animation: false,
+      tooltip: {
+        trigger: 'axis',
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        textStyle: { color: '#1f2937' }
+      },
+      grid: { top: 0, right: 0, bottom: 0, left: 0 },
+      xAxis: {
+        type: 'category',
+        data: ['Adobe Premiere', 'After Effects', 'DaVinci Resolve', 'Final Cut Pro', 'Motion Graphics'],
+        axisLabel: { color: '#1f2937' }
+      },
+      yAxis: {
+        type: 'value',
+        max: 100,
+        axisLabel: { color: '#1f2937' }
+      },
+      series: [{
+        data: [95, 88, 85, 90, 82],
+        type: 'bar',
+        itemStyle: { color: 'rgba(87, 181, 231, 1)' },
+        barWidth: '60%',
+        borderRadius: 8
+      }]
+    };
+    
+    const webSkillsOption = {
+      animation: false,
+      tooltip: {
+        trigger: 'axis',
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        textStyle: { color: '#1f2937' }
+      },
+      grid: { top: 0, right: 0, bottom: 0, left: 0 },
+      xAxis: {
+        type: 'category',
+        data: ['HTML/CSS', 'JavaScript', 'React', 'Node.js', 'UI/UX Design'],
+        axisLabel: { color: '#1f2937' }
+      },
+      yAxis: {
+        type: 'value',
+        max: 100,
+        axisLabel: { color: '#1f2937' }
+      },
+      series: [{
+        data: [92, 85, 80, 75, 88],
+        type: 'bar',
+        itemStyle: { color: 'rgba(141, 211, 199, 1)' },
+        barWidth: '60%',
+        borderRadius: 8
+      }]
+    };
+    
+    videoSkillsChart.setOption(videoSkillsOption);
+    webSkillsChart.setOption(webSkillsOption);
+    
+    window.addEventListener('resize', function() {
+      videoSkillsChart.resize();
+      webSkillsChart.resize();
+    });
+  </script>
+</body>
+</html>
